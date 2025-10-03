@@ -1,7 +1,7 @@
 // This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © Anthony C. https://x.com/anthonycxc
 
-// @version=6
+//@version=6
 // -----------------------------------------------------------------------------
 //  OBV-EMA Oscillator with Volume & MAVOL
 //  - Volume columns + MAVOL (single pane)
@@ -12,7 +12,7 @@
 //      >4h–1D  → EMA=34, MAVOL=30
 //      >1D     → EMA=55, MAVOL=50
 // -----------------------------------------------------------------------------
-indicator("OBV-EMA Oscillator with Volume & MAVOL", shorttitle="OBV-EMA-VOL - v2.2.5 -", overlay=false)
+indicator("OBV-EMA Oscillator with Volume & MAVOL", shorttitle="OBV-EMA-VOL - v2.2.6 -", overlay=false)
 
 // === Inputs ===
 // Oscillator
@@ -70,4 +70,4 @@ hline(0, "Zero", color=color.gray)
 
 // Volume + MAVOL
 plot(showVol ? volume : na, title="Volume", style=plot.style_columns, color=vBarCol, linewidth=1)
-plot(showVol ? vma    : na, title="MAVOL", color=color.rgb(200, 0, 236, 50), linewidth=2)
+plot(showVol ? vma    : na, title="MAVOL", color=color.rgb(200, 0, 236, 50), linewidth=1)
